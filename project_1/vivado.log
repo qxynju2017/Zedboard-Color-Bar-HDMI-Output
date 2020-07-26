@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Jul 26 18:17:42 2020
+# Process ID: 5292
+# Current directory: E:/FPGA_Test/0_Finished/Zedboard/黑金_米联客例程Zedboard移植/ax7010_pl_hdmi_out_20200308/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8648 E:\FPGA_Test\0_Finished\Zedboard\黑金_米联客例程Zedboard移植\ax7010_pl_hdmi_out_20200308\project_1\project_1.xpr
+# Log file: E:/FPGA_Test/0_Finished/Zedboard/黑金_米联客例程Zedboard移植/ax7010_pl_hdmi_out_20200308/project_1/vivado.log
+# Journal file: E:/FPGA_Test/0_Finished/Zedboard/黑金_米联客例程Zedboard移植/ax7010_pl_hdmi_out_20200308/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jul 26 18:21:23 2020...

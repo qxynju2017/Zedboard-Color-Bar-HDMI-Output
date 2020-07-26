@@ -1,0 +1,75 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun Mar  8 18:40:36 2020
+| Host         : LAPTOP-HU0R68OD running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7z020
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     9 |
+| Unused register locations in slices containing registers |    20 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|     12 |            1 |
+|     14 |            1 |
+|    16+ |            7 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             186 |           32 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              42 |            7 |
+| Yes          | No                    | No                     |              86 |           13 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              34 |            5 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------+----------------------------------------------------+---------------------------------------------------------------+------------------+----------------+
+|          Clock Signal         |                    Enable Signal                   |                        Set/Reset Signal                       | Slice Load Count | Bel Load Count |
++-------------------------------+----------------------------------------------------+---------------------------------------------------------------+------------------+----------------+
+|  video_clock_m0/inst/clk_out3 | miz_hdmi_0/inst/my_sccb/my_sccb_control/sccb_count | miz_hdmi_0/inst/my_sccb/my_sccb_control/sccb_count[5]_i_1_n_0 |                2 |             12 |
+|  video_clock_m0/inst/clk_out3 | miz_hdmi_0/inst/my_sccb/E[0]                       |                                                               |                2 |             14 |
+|  video_clock_m0/inst/clk_out3 |                                                    | miz_hdmi_0/inst/my_sccb/clear                                 |                4 |             20 |
+|  video_clock_m0/inst/clk_out3 |                                                    |                                                               |                6 |             22 |
+|  video_clock_m0/inst/clk_out1 |                                                    | hdmi_color_bar/h_cnt[11]_i_1_n_0                              |                3 |             22 |
+|  video_clock_m0/inst/clk_out1 | hdmi_color_bar/v_cnt                               | hdmi_color_bar/v_cnt[11]_i_1_n_0                              |                3 |             22 |
+|  video_clock_m0/inst/clk_out1 | hdmi_color_bar/active_x[11]_i_1_n_0                |                                                               |                4 |             24 |
+|  video_clock_m0/inst/clk_out1 | miz_hdmi_0/inst/my_convert_444_422/b2_out_r        |                                                               |                7 |             48 |
+|  video_clock_m0/inst/clk_out1 |                                                    |                                                               |               27 |            170 |
++-------------------------------+----------------------------------------------------+---------------------------------------------------------------+------------------+----------------+
+
+

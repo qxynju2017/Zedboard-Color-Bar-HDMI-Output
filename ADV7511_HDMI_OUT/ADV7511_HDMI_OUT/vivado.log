@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sat Dec 03 23:45:45 2016
+# Process ID: 67100
+# Current directory: G:/BaiduYunDownload/CH28/ip_repo/ADV7511_HDMI_OUT/ADV7511_HDMI_OUT
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent64768 G:\BaiduYunDownload\CH28\ip_repo\ADV7511_HDMI_OUT\ADV7511_HDMI_OUT\ADV7511_HDMI_OUT.xpr
+# Log file: G:/BaiduYunDownload/CH28/ip_repo/ADV7511_HDMI_OUT/ADV7511_HDMI_OUT/vivado.log
+# Journal file: G:/BaiduYunDownload/CH28/ip_repo/ADV7511_HDMI_OUT/ADV7511_HDMI_OUT\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/BaiduYunDownload/CH28/ip_repo/ADV7511_HDMI_OUT/ADV7511_HDMI_OUT/ADV7511_HDMI_OUT.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2015.4/data/ip'.
+ipx::package_project -root_dir g:/baiduyundownload/ch28/ip_repo/adv7511_hdmi_out/ipsrc -vendor xilinx.com -library user -taxonomy /UserIP
+INFO: [IP_Flow 19-2228] Inferred bus interface "hdmi_clk" of definition type "xilinx.com:signal:clock:1.0".
+INFO: [IP_Flow 19-2228] Inferred bus interface "i2c_clk" of definition type "xilinx.com:signal:clock:1.0".
+INFO: [IP_Flow 19-2228] Inferred bus interface "vga_clk" of definition type "xilinx.com:signal:clock:1.0".
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+INFO: [HDL 9-2216] Analyzing Verilog file "G:/BaiduYunDownload/CH28/ip_repo/ADV7511_HDMI_OUT/IPSRC/I2C_OV7670_RGB565_Config.v" into library work [G:/BaiduYunDownload/CH28/ip_repo/ADV7511_HDMI_OUT/IPSRC/I2C_OV7670_RGB565_Config.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "G:/BaiduYunDownload/CH28/ip_repo/ADV7511_HDMI_OUT/IPSRC/colour_space_conversion.v" into library work [G:/BaiduYunDownload/CH28/ip_repo/ADV7511_HDMI_OUT/IPSRC/colour_space_conversion.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "G:/BaiduYunDownload/CH28/ip_repo/ADV7511_HDMI_OUT/IPSRC/convert_444_422.v" into library work [G:/BaiduYunDownload/CH28/ip_repo/ADV7511_HDMI_OUT/IPSRC/convert_444_422.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "G:/BaiduYunDownload/CH28/ip_repo/ADV7511_HDMI_OUT/IPSRC/hdmi_ddr_output.v" into library work [G:/BaiduYunDownload/CH28/ip_repo/ADV7511_HDMI_OUT/IPSRC/hdmi_ddr_output.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "G:/BaiduYunDownload/CH28/ip_repo/ADV7511_HDMI_OUT/IPSRC/hdmi_display.v" into library work [G:/BaiduYunDownload/CH28/ip_repo/ADV7511_HDMI_OUT/IPSRC/hdmi_display.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "G:/BaiduYunDownload/CH28/ip_repo/ADV7511_HDMI_OUT/IPSRC/sccb.v" into library work [G:/BaiduYunDownload/CH28/ip_repo/ADV7511_HDMI_OUT/IPSRC/sccb.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "G:/BaiduYunDownload/CH28/ip_repo/ADV7511_HDMI_OUT/IPSRC/sccb_control.v" into library work [G:/BaiduYunDownload/CH28/ip_repo/ADV7511_HDMI_OUT/IPSRC/sccb_control.v:1]
+[Sun Dec 04 00:50:14 2016] Launched synth_1...
+Run output will be captured here: G:/BaiduYunDownload/CH28/ip_repo/ADV7511_HDMI_OUT/ADV7511_HDMI_OUT/ADV7511_HDMI_OUT.runs/synth_1/runme.log
+ipx::package_project -root_dir g:/baiduyundownload/ch28/ip_repo/adv7511_hdmi_out/ipsrc -vendor xilinx.com -library user -taxonomy /UserIP -force
+INFO: [IP_Flow 19-2228] Inferred bus interface "hdmi_clk" of definition type "xilinx.com:signal:clock:1.0".
+INFO: [IP_Flow 19-2228] Inferred bus interface "i2c_clk" of definition type "xilinx.com:signal:clock:1.0".
+INFO: [IP_Flow 19-2228] Inferred bus interface "vga_clk" of definition type "xilinx.com:signal:clock:1.0".
+ipx::package_project -root_dir g:/baiduyundownload/ch28/ip_repo/adv7511_hdmi_out -vendor xilinx.com -library user -taxonomy /UserIP
+INFO: [IP_Flow 19-2228] Inferred bus interface "hdmi_clk" of definition type "xilinx.com:signal:clock:1.0".
+INFO: [IP_Flow 19-2228] Inferred bus interface "i2c_clk" of definition type "xilinx.com:signal:clock:1.0".
+INFO: [IP_Flow 19-2228] Inferred bus interface "vga_clk" of definition type "xilinx.com:signal:clock:1.0".
+ipx::package_project -root_dir g:/baiduyundownload/ch28/ip_repo/adv7511_hdmi_out -vendor xilinx.com -library user -taxonomy /UserIP -force
+INFO: [IP_Flow 19-2228] Inferred bus interface "hdmi_clk" of definition type "xilinx.com:signal:clock:1.0".
+INFO: [IP_Flow 19-2228] Inferred bus interface "i2c_clk" of definition type "xilinx.com:signal:clock:1.0".
+INFO: [IP_Flow 19-2228] Inferred bus interface "vga_clk" of definition type "xilinx.com:signal:clock:1.0".
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 04 02:19:24 2016...

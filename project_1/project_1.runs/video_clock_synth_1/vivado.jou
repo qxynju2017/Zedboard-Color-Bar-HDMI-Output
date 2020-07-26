@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Mar  8 18:36:27 2020
+# Process ID: 11440
+# Current directory: E:/FPGA_Test/Study/ax7010_pl_hdmi_out_20200308/project_1/project_1.runs/video_clock_synth_1
+# Command line: vivado.exe -log video_clock.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source video_clock.tcl
+# Log file: E:/FPGA_Test/Study/ax7010_pl_hdmi_out_20200308/project_1/project_1.runs/video_clock_synth_1/video_clock.vds
+# Journal file: E:/FPGA_Test/Study/ax7010_pl_hdmi_out_20200308/project_1/project_1.runs/video_clock_synth_1\vivado.jou
+#-----------------------------------------------------------
+source video_clock.tcl -notrace

@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sat Dec 03 23:45:45 2016
+# Process ID: 67100
+# Current directory: G:/BaiduYunDownload/CH28/ip_repo/ADV7511_HDMI_OUT/ADV7511_HDMI_OUT
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent64768 G:\BaiduYunDownload\CH28\ip_repo\ADV7511_HDMI_OUT\ADV7511_HDMI_OUT\ADV7511_HDMI_OUT.xpr
+# Log file: G:/BaiduYunDownload/CH28/ip_repo/ADV7511_HDMI_OUT/ADV7511_HDMI_OUT/vivado.log
+# Journal file: G:/BaiduYunDownload/CH28/ip_repo/ADV7511_HDMI_OUT/ADV7511_HDMI_OUT\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/BaiduYunDownload/CH28/ip_repo/ADV7511_HDMI_OUT/ADV7511_HDMI_OUT/ADV7511_HDMI_OUT.xpr
+ipx::package_project -root_dir g:/baiduyundownload/ch28/ip_repo/adv7511_hdmi_out/ipsrc -vendor xilinx.com -library user -taxonomy /UserIP
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+ipx::package_project -root_dir g:/baiduyundownload/ch28/ip_repo/adv7511_hdmi_out/ipsrc -vendor xilinx.com -library user -taxonomy /UserIP -force
+ipx::package_project -root_dir g:/baiduyundownload/ch28/ip_repo/adv7511_hdmi_out -vendor xilinx.com -library user -taxonomy /UserIP
+ipx::package_project -root_dir g:/baiduyundownload/ch28/ip_repo/adv7511_hdmi_out -vendor xilinx.com -library user -taxonomy /UserIP -force

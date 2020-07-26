@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sat Dec 03 22:27:59 2016
+# Process ID: 62184
+# Current directory: D:/TESTHDMI/ADV7511_HDMI_OUT/ADV7511_HDMI_OUT
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent63840 D:\TESTHDMI\ADV7511_HDMI_OUT\ADV7511_HDMI_OUT\ADV7511_HDMI_OUT.xpr
+# Log file: D:/TESTHDMI/ADV7511_HDMI_OUT/ADV7511_HDMI_OUT/vivado.log
+# Journal file: D:/TESTHDMI/ADV7511_HDMI_OUT/ADV7511_HDMI_OUT\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/TESTHDMI/ADV7511_HDMI_OUT/ADV7511_HDMI_OUT/ADV7511_HDMI_OUT.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2015.4/data/ip'.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir D:/TESTHDMI/ADV7511_HDMI_OUT/ADV7511_HDMI_OUT -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false -force
+INFO: [IP_Flow 19-2228] Inferred bus interface "hdmi_clk" of definition type "xilinx.com:signal:clock:1.0".
+INFO: [IP_Flow 19-2228] Inferred bus interface "i2c_clk" of definition type "xilinx.com:signal:clock:1.0".
+INFO: [IP_Flow 19-2228] Inferred bus interface "vga_clk" of definition type "xilinx.com:signal:clock:1.0".
+ipx::unload_core d:/TESTHDMI/ADV7511_HDMI_OUT/ADV7511_HDMI_OUT/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory D:/TESTHDMI/ADV7511_HDMI_OUT/ADV7511_HDMI_OUT d:/TESTHDMI/ADV7511_HDMI_OUT/ADV7511_HDMI_OUT/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2015.4/data/ip'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+update_compile_order -fileset sim_1
+close_project
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source d:/testhdmi/adv7511_hdmi_out/adv7511_hdmi_out/tmp_edit_project.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Dec 03 22:30:33 2016...
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 03 22:30:38 2016...

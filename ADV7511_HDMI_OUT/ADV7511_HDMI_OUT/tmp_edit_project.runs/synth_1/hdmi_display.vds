@@ -1,0 +1,568 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sat Dec 03 23:21:10 2016
+# Process ID: 67304
+# Current directory: g:/BaiduYunDownload/CH28/ip_repo/ADV7511_HDMI_OUT/ADV7511_HDMI_OUT/tmp_edit_project.runs/synth_1
+# Command line: vivado.exe -log hdmi_display.vds -mode batch -messageDb vivado.pb -notrace -source hdmi_display.tcl
+# Log file: g:/BaiduYunDownload/CH28/ip_repo/ADV7511_HDMI_OUT/ADV7511_HDMI_OUT/tmp_edit_project.runs/synth_1/hdmi_display.vds
+# Journal file: g:/BaiduYunDownload/CH28/ip_repo/ADV7511_HDMI_OUT/ADV7511_HDMI_OUT/tmp_edit_project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source hdmi_display.tcl -notrace
+Command: synth_design -top hdmi_display -part xc7z010clg400-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 278.121 ; gain = 105.590
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'hdmi_display' [g:/baiduyundownload/ch28/ip_repo/adv7511_hdmi_out/adv7511_hdmi_out/src/hdmi_display.v:19]
+INFO: [Synth 8-638] synthesizing module 'convert_444_422' [g:/baiduyundownload/ch28/ip_repo/adv7511_hdmi_out/adv7511_hdmi_out/src/convert_444_422.v:21]
+INFO: [Synth 8-4471] merging register 'd_a_last_reg' into 'de_out_r_reg' [g:/baiduyundownload/ch28/ip_repo/adv7511_hdmi_out/adv7511_hdmi_out/src/convert_444_422.v:66]
+INFO: [Synth 8-256] done synthesizing module 'convert_444_422' (1#1) [g:/baiduyundownload/ch28/ip_repo/adv7511_hdmi_out/adv7511_hdmi_out/src/convert_444_422.v:21]
+INFO: [Synth 8-638] synthesizing module 'colour_space_conversion' [g:/baiduyundownload/ch28/ip_repo/adv7511_hdmi_out/adv7511_hdmi_out/src/colour_space_conversion.v:21]
+	Parameter b_r1 bound to: 18'b001000001111000000 
+	Parameter b_g1 bound to: 18'b010000000010100100 
+	Parameter b_b1 bound to: 18'b000011000110100000 
+	Parameter c1 bound to: 48'b000000000010000000000000000000000000000000000000 
+	Parameter c2 bound to: 48'b000000010000000000000000000000000000000000000000 
+INFO: [Synth 8-638] synthesizing module 'DSP48E1' [D:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:3429]
+	Parameter ACASCREG bound to: 0 - type: integer 
+	Parameter ADREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 1 - type: integer 
+	Parameter AREG bound to: 0 - type: integer 
+	Parameter AUTORESET_PATDET bound to: NO_RESET - type: string 
+	Parameter A_INPUT bound to: DIRECT - type: string 
+	Parameter BCASCREG bound to: 0 - type: integer 
+	Parameter BREG bound to: 0 - type: integer 
+	Parameter B_INPUT bound to: DIRECT - type: string 
+	Parameter CARRYINREG bound to: 1 - type: integer 
+	Parameter CARRYINSELREG bound to: 1 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter DREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 1 - type: integer 
+	Parameter IS_ALUMODE_INVERTED bound to: 4'b0000 
+	Parameter IS_CARRYIN_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_INMODE_INVERTED bound to: 5'b00000 
+	Parameter IS_OPMODE_INVERTED bound to: 7'b0000000 
+	Parameter MASK bound to: 48'b001111111111111111111111111111111111111111111111 
+	Parameter MREG bound to: 1 - type: integer 
+	Parameter OPMODEREG bound to: 1 - type: integer 
+	Parameter PATTERN bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter PREG bound to: 1 - type: integer 
+	Parameter SEL_MASK bound to: MASK - type: string 
+	Parameter SEL_PATTERN bound to: PATTERN - type: string 
+	Parameter USE_DPORT bound to: FALSE - type: string 
+	Parameter USE_MULT bound to: MULTIPLY - type: string 
+	Parameter USE_PATTERN_DETECT bound to: NO_PATDET - type: string 
+	Parameter USE_SIMD bound to: ONE48 - type: string 
+INFO: [Synth 8-256] done synthesizing module 'DSP48E1' (2#1) [D:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:3429]
+INFO: [Synth 8-638] synthesizing module 'DSP48E1__parameterized0' [D:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:3429]
+	Parameter ACASCREG bound to: 1 - type: integer 
+	Parameter ADREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 1 - type: integer 
+	Parameter AREG bound to: 1 - type: integer 
+	Parameter AUTORESET_PATDET bound to: NO_RESET - type: string 
+	Parameter A_INPUT bound to: DIRECT - type: string 
+	Parameter BCASCREG bound to: 1 - type: integer 
+	Parameter BREG bound to: 1 - type: integer 
+	Parameter B_INPUT bound to: DIRECT - type: string 
+	Parameter CARRYINREG bound to: 1 - type: integer 
+	Parameter CARRYINSELREG bound to: 1 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter DREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 1 - type: integer 
+	Parameter IS_ALUMODE_INVERTED bound to: 4'b0000 
+	Parameter IS_CARRYIN_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_INMODE_INVERTED bound to: 5'b00000 
+	Parameter IS_OPMODE_INVERTED bound to: 7'b0000000 
+	Parameter MASK bound to: 48'b001111111111111111111111111111111111111111111111 
+	Parameter MREG bound to: 1 - type: integer 
+	Parameter OPMODEREG bound to: 1 - type: integer 
+	Parameter PATTERN bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter PREG bound to: 1 - type: integer 
+	Parameter SEL_MASK bound to: MASK - type: string 
+	Parameter SEL_PATTERN bound to: PATTERN - type: string 
+	Parameter USE_DPORT bound to: FALSE - type: string 
+	Parameter USE_MULT bound to: MULTIPLY - type: string 
+	Parameter USE_PATTERN_DETECT bound to: NO_PATDET - type: string 
+	Parameter USE_SIMD bound to: ONE48 - type: string 
+INFO: [Synth 8-256] done synthesizing module 'DSP48E1__parameterized0' (2#1) [D:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:3429]
+INFO: [Synth 8-638] synthesizing module 'DSP48E1__parameterized1' [D:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:3429]
+	Parameter ACASCREG bound to: 2 - type: integer 
+	Parameter ADREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 1 - type: integer 
+	Parameter AREG bound to: 2 - type: integer 
+	Parameter AUTORESET_PATDET bound to: NO_RESET - type: string 
+	Parameter A_INPUT bound to: DIRECT - type: string 
+	Parameter BCASCREG bound to: 1 - type: integer 
+	Parameter BREG bound to: 1 - type: integer 
+	Parameter B_INPUT bound to: DIRECT - type: string 
+	Parameter CARRYINREG bound to: 1 - type: integer 
+	Parameter CARRYINSELREG bound to: 1 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter DREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 1 - type: integer 
+	Parameter IS_ALUMODE_INVERTED bound to: 4'b0000 
+	Parameter IS_CARRYIN_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_INMODE_INVERTED bound to: 5'b00000 
+	Parameter IS_OPMODE_INVERTED bound to: 7'b0000000 
+	Parameter MASK bound to: 48'b001111111111111111111111111111111111111111111111 
+	Parameter MREG bound to: 1 - type: integer 
+	Parameter OPMODEREG bound to: 1 - type: integer 
+	Parameter PATTERN bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter PREG bound to: 1 - type: integer 
+	Parameter SEL_MASK bound to: MASK - type: string 
+	Parameter SEL_PATTERN bound to: PATTERN - type: string 
+	Parameter USE_DPORT bound to: FALSE - type: string 
+	Parameter USE_MULT bound to: MULTIPLY - type: string 
+	Parameter USE_PATTERN_DETECT bound to: NO_PATDET - type: string 
+	Parameter USE_SIMD bound to: ONE48 - type: string 
+INFO: [Synth 8-256] done synthesizing module 'DSP48E1__parameterized1' (2#1) [D:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:3429]
+INFO: [Synth 8-638] synthesizing module 'DSP48E1__parameterized2' [D:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:3429]
+	Parameter ACASCREG bound to: 0 - type: integer 
+	Parameter ADREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 1 - type: integer 
+	Parameter AREG bound to: 0 - type: integer 
+	Parameter AUTORESET_PATDET bound to: NO_RESET - type: string 
+	Parameter A_INPUT bound to: DIRECT - type: string 
+	Parameter BCASCREG bound to: 0 - type: integer 
+	Parameter BREG bound to: 0 - type: integer 
+	Parameter B_INPUT bound to: DIRECT - type: string 
+	Parameter CARRYINREG bound to: 1 - type: integer 
+	Parameter CARRYINSELREG bound to: 1 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter DREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 1 - type: integer 
+	Parameter IS_ALUMODE_INVERTED bound to: 4'b0000 
+	Parameter IS_CARRYIN_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_INMODE_INVERTED bound to: 5'b00000 
+	Parameter IS_OPMODE_INVERTED bound to: 7'b0000000 
+	Parameter MASK bound to: 48'b001111111111111111111111111111111111111111111111 
+	Parameter MREG bound to: 1 - type: integer 
+	Parameter OPMODEREG bound to: 1 - type: integer 
+	Parameter PATTERN bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter PREG bound to: 1 - type: integer 
+	Parameter SEL_MASK bound to: MASK - type: string 
+	Parameter SEL_PATTERN bound to: PATTERN - type: string 
+	Parameter USE_DPORT bound to: FALSE - type: string 
+	Parameter USE_MULT bound to: MULTIPLY - type: string 
+	Parameter USE_PATTERN_DETECT bound to: NO_PATDET - type: string 
+	Parameter USE_SIMD bound to: ONE48 - type: string 
+INFO: [Synth 8-256] done synthesizing module 'DSP48E1__parameterized2' (2#1) [D:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:3429]
+INFO: [Synth 8-638] synthesizing module 'DSP48E1__parameterized3' [D:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:3429]
+	Parameter ACASCREG bound to: 1 - type: integer 
+	Parameter ADREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 1 - type: integer 
+	Parameter AREG bound to: 1 - type: integer 
+	Parameter AUTORESET_PATDET bound to: NO_RESET - type: string 
+	Parameter A_INPUT bound to: DIRECT - type: string 
+	Parameter BCASCREG bound to: 1 - type: integer 
+	Parameter BREG bound to: 1 - type: integer 
+	Parameter B_INPUT bound to: DIRECT - type: string 
+	Parameter CARRYINREG bound to: 1 - type: integer 
+	Parameter CARRYINSELREG bound to: 1 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter DREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 1 - type: integer 
+	Parameter IS_ALUMODE_INVERTED bound to: 4'b0000 
+	Parameter IS_CARRYIN_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_INMODE_INVERTED bound to: 5'b00000 
+	Parameter IS_OPMODE_INVERTED bound to: 7'b0000000 
+	Parameter MASK bound to: 48'b001111111111111111111111111111111111111111111111 
+	Parameter MREG bound to: 1 - type: integer 
+	Parameter OPMODEREG bound to: 1 - type: integer 
+	Parameter PATTERN bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter PREG bound to: 1 - type: integer 
+	Parameter SEL_MASK bound to: MASK - type: string 
+	Parameter SEL_PATTERN bound to: PATTERN - type: string 
+	Parameter USE_DPORT bound to: FALSE - type: string 
+	Parameter USE_MULT bound to: MULTIPLY - type: string 
+	Parameter USE_PATTERN_DETECT bound to: NO_PATDET - type: string 
+	Parameter USE_SIMD bound to: ONE48 - type: string 
+INFO: [Synth 8-256] done synthesizing module 'DSP48E1__parameterized3' (2#1) [D:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:3429]
+INFO: [Synth 8-638] synthesizing module 'DSP48E1__parameterized4' [D:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:3429]
+	Parameter ACASCREG bound to: 2 - type: integer 
+	Parameter ADREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 1 - type: integer 
+	Parameter AREG bound to: 2 - type: integer 
+	Parameter AUTORESET_PATDET bound to: NO_RESET - type: string 
+	Parameter A_INPUT bound to: DIRECT - type: string 
+	Parameter BCASCREG bound to: 2 - type: integer 
+	Parameter BREG bound to: 2 - type: integer 
+	Parameter B_INPUT bound to: DIRECT - type: string 
+	Parameter CARRYINREG bound to: 1 - type: integer 
+	Parameter CARRYINSELREG bound to: 1 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter DREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 1 - type: integer 
+	Parameter IS_ALUMODE_INVERTED bound to: 4'b0000 
+	Parameter IS_CARRYIN_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_INMODE_INVERTED bound to: 5'b00000 
+	Parameter IS_OPMODE_INVERTED bound to: 7'b0000000 
+	Parameter MASK bound to: 48'b001111111111111111111111111111111111111111111111 
+	Parameter MREG bound to: 1 - type: integer 
+	Parameter OPMODEREG bound to: 1 - type: integer 
+	Parameter PATTERN bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter PREG bound to: 1 - type: integer 
+	Parameter SEL_MASK bound to: MASK - type: string 
+	Parameter SEL_PATTERN bound to: PATTERN - type: string 
+	Parameter USE_DPORT bound to: FALSE - type: string 
+	Parameter USE_MULT bound to: MULTIPLY - type: string 
+	Parameter USE_PATTERN_DETECT bound to: NO_PATDET - type: string 
+	Parameter USE_SIMD bound to: ONE48 - type: string 
+INFO: [Synth 8-256] done synthesizing module 'DSP48E1__parameterized4' (2#1) [D:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:3429]
+INFO: [Synth 8-256] done synthesizing module 'colour_space_conversion' (3#1) [g:/baiduyundownload/ch28/ip_repo/adv7511_hdmi_out/adv7511_hdmi_out/src/colour_space_conversion.v:21]
+INFO: [Synth 8-638] synthesizing module 'hdmi_ddr_output' [g:/baiduyundownload/ch28/ip_repo/adv7511_hdmi_out/adv7511_hdmi_out/src/hdmi_ddr_output.v:21]
+INFO: [Synth 8-638] synthesizing module 'ODDR' [D:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:25287]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-256] done synthesizing module 'ODDR' (4#1) [D:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:25287]
+INFO: [Synth 8-256] done synthesizing module 'hdmi_ddr_output' (5#1) [g:/baiduyundownload/ch28/ip_repo/adv7511_hdmi_out/adv7511_hdmi_out/src/hdmi_ddr_output.v:21]
+INFO: [Synth 8-638] synthesizing module 'sccb' [g:/baiduyundownload/ch28/ip_repo/adv7511_hdmi_out/adv7511_hdmi_out/src/sccb.v:21]
+	Parameter initial_SIZE bound to: 64 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'I2C_OV7670_RGB565_Config' [g:/baiduyundownload/ch28/ip_repo/adv7511_hdmi_out/adv7511_hdmi_out/src/I2C_OV7670_RGB565_Config.v:21]
+INFO: [Synth 8-256] done synthesizing module 'I2C_OV7670_RGB565_Config' (6#1) [g:/baiduyundownload/ch28/ip_repo/adv7511_hdmi_out/adv7511_hdmi_out/src/I2C_OV7670_RGB565_Config.v:21]
+INFO: [Synth 8-638] synthesizing module 'sccb_control' [g:/baiduyundownload/ch28/ip_repo/adv7511_hdmi_out/adv7511_hdmi_out/src/sccb_control.v:21]
+INFO: [Synth 8-256] done synthesizing module 'sccb_control' (7#1) [g:/baiduyundownload/ch28/ip_repo/adv7511_hdmi_out/adv7511_hdmi_out/src/sccb_control.v:21]
+INFO: [Synth 8-256] done synthesizing module 'sccb' (8#1) [g:/baiduyundownload/ch28/ip_repo/adv7511_hdmi_out/adv7511_hdmi_out/src/sccb.v:21]
+WARNING: [Synth 8-350] instance 'my_sccb' of module 'sccb' requires 4 connections, but only 3 given [g:/baiduyundownload/ch28/ip_repo/adv7511_hdmi_out/adv7511_hdmi_out/src/hdmi_display.v:129]
+INFO: [Synth 8-256] done synthesizing module 'hdmi_display' (9#1) [g:/baiduyundownload/ch28/ip_repo/adv7511_hdmi_out/adv7511_hdmi_out/src/hdmi_display.v:19]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 313.316 ; gain = 140.785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 313.316 ; gain = 140.785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 313.316 ; gain = 140.785
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-2
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 351.211 ; gain = 178.680
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 6     
+	                8 Bit    Registers := 6     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 24    
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 3     
+	  40 Input      1 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module convert_444_422 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 6     
+	                8 Bit    Registers := 3     
+	                1 Bit    Registers := 8     
+Module colour_space_conversion 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 3     
+Module hdmi_ddr_output 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module sccb_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	  40 Input      1 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 1     
+Module sccb 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 444.730 ; gain = 272.199
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design hdmi_display has port hdmi_d[7] driven by constant 0
+WARNING: [Synth 8-3917] design hdmi_display has port hdmi_d[6] driven by constant 0
+WARNING: [Synth 8-3917] design hdmi_display has port hdmi_d[5] driven by constant 0
+WARNING: [Synth 8-3917] design hdmi_display has port hdmi_d[4] driven by constant 0
+WARNING: [Synth 8-3917] design hdmi_display has port hdmi_d[3] driven by constant 0
+WARNING: [Synth 8-3917] design hdmi_display has port hdmi_d[2] driven by constant 0
+WARNING: [Synth 8-3917] design hdmi_display has port hdmi_d[1] driven by constant 0
+WARNING: [Synth 8-3917] design hdmi_display has port hdmi_d[0] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 486.121 ; gain = 313.590
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 486.121 ; gain = 313.590
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------------------+------------+---------------+----------------+
+|Module Name              | RTL Object | Depth x Width | Implemented As | 
++-------------------------+------------+---------------+----------------+
+|I2C_OV7670_RGB565_Config | rom        | 256x16        | LUT            | 
+|hdmi_display             | rom        | 256x16        | LUT            | 
++-------------------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_convert_444_422/r2_out_r_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_convert_444_422/r1_out_r_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_convert_444_422/g2_out_r_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_convert_444_422/g1_out_r_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_convert_444_422/b2_out_r_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_convert_444_422/b1_out_r_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (\my_convert_444_422/r1_out_r_reg[0] ) is unused and will be removed from module hdmi_display.
+WARNING: [Synth 8-3332] Sequential element (\my_convert_444_422/g1_out_r_reg[0] ) is unused and will be removed from module hdmi_display.
+WARNING: [Synth 8-3332] Sequential element (\my_convert_444_422/b1_out_r_reg[0] ) is unused and will be removed from module hdmi_display.
+WARNING: [Synth 8-3332] Sequential element (\my_convert_444_422/r2_out_r_reg[0] ) is unused and will be removed from module hdmi_display.
+WARNING: [Synth 8-3332] Sequential element (\my_convert_444_422/g2_out_r_reg[0] ) is unused and will be removed from module hdmi_display.
+WARNING: [Synth 8-3332] Sequential element (\my_convert_444_422/b2_out_r_reg[0] ) is unused and will be removed from module hdmi_display.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 486.121 ; gain = 313.590
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 486.121 ; gain = 313.590
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 486.121 ; gain = 313.590
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 486.121 ; gain = 313.590
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 486.121 ; gain = 313.590
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 486.121 ; gain = 313.590
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 486.121 ; gain = 313.590
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 486.121 ; gain = 313.590
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 486.121 ; gain = 313.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 486.121 ; gain = 313.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 486.121 ; gain = 313.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 486.121 ; gain = 313.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register:
++-------------+-----------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name  | RTL Name                                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------+-----------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|hdmi_display | my_colour_space_conversion/de_out_r_reg | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|hdmi_display | my_hdmi_ddr_output/hdmi_hsync_r_reg     | 8      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|hdmi_display | my_hdmi_ddr_output/hdmi_vsync_r_reg     | 8      | 1     | NO           | YES                | YES               | 1      | 0       | 
++-------------+-----------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     2|
+|2     |CARRY4  |     4|
+|3     |DSP48E1 |     6|
+|4     |LUT1    |    20|
+|5     |LUT2    |     4|
+|6     |LUT3    |     9|
+|7     |LUT4    |     8|
+|8     |LUT5    |    13|
+|9     |LUT6    |    45|
+|10    |MUXF7   |     6|
+|11    |ODDR    |    10|
+|12    |SRL16E  |     3|
+|13    |FDRE    |   146|
+|14    |IBUF    |    30|
+|15    |OBUF    |    21|
+|16    |OBUFT   |     1|
++------+--------+------+
+
+Report Instance Areas: 
++------+-----------------------------+------------------------+------+
+|      |Instance                     |Module                  |Cells |
++------+-----------------------------+------------------------+------+
+|1     |top                          |                        |   328|
+|2     |  my_colour_space_conversion |colour_space_conversion |    26|
+|3     |  my_convert_444_422         |convert_444_422         |    81|
+|4     |  my_hdmi_ddr_output         |hdmi_ddr_output         |    12|
+|5     |  my_sccb                    |sccb                    |   155|
+|6     |    my_sccb_control          |sccb_control            |    82|
++------+-----------------------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 486.121 ; gain = 313.590
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 486.121 ; gain = 268.797
+Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 486.121 ; gain = 313.590
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 50 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 525.664 ; gain = 336.113
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 525.664 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 03 23:21:19 2016...
